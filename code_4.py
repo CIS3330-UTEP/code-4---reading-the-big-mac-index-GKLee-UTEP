@@ -1,9 +1,10 @@
 import csv
 import pandas as pd
 big_mac_file = './big-mac-full-index.csv'
+df = pd.read_csv(big_mac_file)
 
 def get_big_mac_price_by_year(year,country_code):
-    pass # Remove this line and code your function
+    price_query = f"date.loc[0:4] == "
 
 def get_big_mac_price_by_country(country_code):
     pass # Remove this line and code your function
