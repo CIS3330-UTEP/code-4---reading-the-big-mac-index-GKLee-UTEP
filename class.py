@@ -20,4 +20,10 @@ min_idx = mxn_df['dollar_price'].idxmin()
 def get_new_country_name(row):
     new_country_name = f"{row['name']} ({row['iso_a3']})"
     print(new_country_name)
+    # or return new_country_name
+
 df.apply(get_new_country_name,axis=1)
+
+#df['new name'] = df.apply(get_new_country_name,axis=1)
+#print(df['new name'])
+#Ues the above method uf returning results from the function
